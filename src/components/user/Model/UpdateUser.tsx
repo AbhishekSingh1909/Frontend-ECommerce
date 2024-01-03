@@ -179,7 +179,7 @@ export const UpdateUserByAdmin = ({ updateUser }: { updateUser: User }) => {
                   required
                   fullWidth
                   select
-                  defaultValue={updateUser.role}
+                  defaultValue={updateUser?.role}
                   margin="normal"
                   label="role"
                   {...field}
