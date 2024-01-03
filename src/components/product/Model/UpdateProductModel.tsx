@@ -135,12 +135,11 @@ export default function UpdateProductModel({ product }: { product: Product }) {
             )}
             <TextField
               required
-              disabled
               fullWidth
               select
               id="categoryId"
               label="Category"
-              defaultValue={c_id}
+              defaultValue={product?.categoryId}
               {...register("categoryId")}
             >
               {categories?.map((c) => (
