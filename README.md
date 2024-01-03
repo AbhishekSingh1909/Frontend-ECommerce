@@ -164,7 +164,10 @@ first clone the project from the repository and run the node commands.
 The project uses JEST framework to unit test all the reducers.
 To run test: npm test
 
-## Deployment
+### Deployment
 
-- this project can access by url -https://tiny-lily-dcaacd.netlify.app
+[deploy link frontend project](https://tiny-lily-dcaacd.netlify.app)
+[deploy link frontend project](https://e-commerce-website-rho-eight.vercel.app/)
+
+[Full stack project fStore frontend deployment Link ](https://fstore-project.vercel.app/)
 ```

@@ -31,16 +31,12 @@ import {
 
 export default function UpdateProductModel({ product }: { product: Product }) {
   const [open, setOpen] = React.useState(false);
-  const [c_id, setC_id] = React.useState(product?.categoryId);
   const dispatch = useAppDispatch();
 
   const categories = useAppSelector(
     (state) => state.ProductCategoryReducer.categories
   );
 
-
-  console.log("product", product);
-  console.log("category", c_id);
 
   const defaultValues: DefaultValues<FormValues> = {
     title: product?.title,
