@@ -34,7 +34,7 @@ describe("Test auth reducer async actions", () => {
       userLogInAsync({ email: "john@mail.com", password: "cngeme" })
     );
     expect(store.getState().authReducer.error).toBe(
-      "user's cedential is not valid"
+      "Request failed with status code 401"
     );
   });
   test("Should authenticate user with right token", async () => {
@@ -50,7 +50,7 @@ describe("Test auth reducer async actions", () => {
       authenticateUserAsync(userToken.refresh_token + "_" + 10)
     );
     expect(store.getState().authReducer.error).toBe(
-      "The user is not authorized"
+      "Request failed with status code 401"
     );
   });
   test("should update user profile", async () => {

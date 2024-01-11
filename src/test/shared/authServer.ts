@@ -20,8 +20,7 @@ export const handlers = [
         const token = userToken.access_token + "_" + user.id;
         return res(ctx.json(token));
       } else {
-        ctx.status(401);
-        throw new AxiosError("user's cedential is not valid");
+        return res(ctx.status(401));
       }
     }
   ),
@@ -40,7 +39,8 @@ export const handlers = [
         return res(ctx.json(user));
       } else {
         ctx.status(401);
-        throw new AxiosError("The user is not authorized");
+        const error = new Error('The user is not authorized');
+        return res(ctx.status(401), ctx.json(error));
       }
     }
     else {
