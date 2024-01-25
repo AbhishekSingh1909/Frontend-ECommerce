@@ -7,7 +7,7 @@ import { CreateOrder, Order, OrderProductCreateDTO, OrderProductReadDTO, OrderSt
 import { productsData } from "../dataSeed/productData.Seed";
 
 export const handlers = [
-    rest.get("https://fakestore.azurewebsites.net/api/v1/orders", (req, res, ctx) => {
+    rest.get("http://20.218.124.180/api/v1/orders", (req, res, ctx) => {
 
         // Check for the authorization header in the request
         const authorizationHeader = req.headers.get('Authorization');
@@ -22,7 +22,7 @@ export const handlers = [
         }
     }),
 
-    rest.post("https://fakestore.azurewebsites.net/api/v1/orders", async (req, res, ctx) => {
+    rest.post("http://20.218.124.180/api/v1/orders", async (req, res, ctx) => {
         const input: CreateOrder = await req.json();
         const authorizationHeader = req.headers.get('Authorization');
         if (authorizationHeader && authorizationHeader.startsWith('Bearer')) {

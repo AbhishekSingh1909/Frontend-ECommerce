@@ -17,7 +17,7 @@ export const getProductAllImagesAsync = createAsyncThunk<
     };
     try {
         const response = await axios.get(
-            `https://fakestore.azurewebsites.net/api/v1/images/product/${id}`, config
+            `http://20.218.124.180/api/v1/images/product/${id}`, config
         );
 
         return response.data;

@@ -12,7 +12,7 @@ export const getSingleProductByIdAsync = createAsyncThunk<
   async (productId, { rejectWithValue }) => {
     try {
       const response = await axios.get(
-        `https://fakestore.azurewebsites.net/api/v1/products/${productId}`
+        `http://20.218.124.180/api/v1/products/${productId}`
       );
       return response.data;
     } catch (e) {

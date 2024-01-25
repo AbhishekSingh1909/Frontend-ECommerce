@@ -27,7 +27,7 @@ export const getAllProductsAsync = createAsyncThunk<
   try {
 
     const response = await axios.get(
-      `https://fakestore.azurewebsites.net/api/v1/products`
+      `http://20.218.124.180/api/v1/products`
     );
     //console.log(response.data);
 
@@ -53,7 +53,7 @@ export const updateProductAsync = createAsyncThunk<
     };
     try {
       const response = await axios.patch(
-        `https://fakestore.azurewebsites.net/api/v1/products/${params.id}`,
+        `http://20.218.124.180/api/v1/products/${params.id}`,
         params.updateProduct, config
       );
 

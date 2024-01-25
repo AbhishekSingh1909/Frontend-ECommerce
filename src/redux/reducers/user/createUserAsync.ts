@@ -11,7 +11,7 @@ export const createUsersAsync = createAsyncThunk<
 >("users/createUsersAsync", async (user, { rejectWithValue }) => {
   try {
     const response = await axios.post(
-      `https://fakestore.azurewebsites.net/api/v1/users`,
+      `http://20.218.124.180/api/v1/users`,
       user
     );
     return response.data;

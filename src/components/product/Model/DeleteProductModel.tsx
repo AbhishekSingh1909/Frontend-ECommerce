@@ -41,12 +41,7 @@ export const DeleteProductModel = ({ product }: { product: Product }) => {
 
   const deletedProduct = async () => {
     if (product) {
-      const result = await dispatch(deleteProductAsync(product.id));
-      if (result.meta.requestStatus === "fulfilled") {
-        toast.success(`${product.title} has been deleted successfully`);
-      } else if (result.meta.requestStatus === "rejected") {
-        toast.error(`${product.title} could not deleted`);
-      }
+      await dispatch(deleteProductAsync(product.id));
     }
     setOpen(false);
   };

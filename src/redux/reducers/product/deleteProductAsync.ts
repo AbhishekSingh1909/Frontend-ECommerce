@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { AxiosError } from "axios";
+import { toast } from "react-toastify";
 
 export const deleteProductAsync = createAsyncThunk<
   string,
@@ -14,14 +15,16 @@ export const deleteProductAsync = createAsyncThunk<
   };
   try {
     const response = await axios.delete<boolean>(
-      `https://fakestore.azurewebsites.net/api/v1/products/${productId}`, config
+      `http://20.218.124.180/api/v1/products/${productId}`, config
     );
-    if (!response.data) {
+    if (!response?.data) {
       throw new AxiosError("Could not delete product");
     }
+    toast.success(`product has been deleted successfully`);
     return productId;
   } catch (e) {
     const error = e as AxiosError;
+    toast.error(`product could not deleted`);
     return rejectWithValue(error);
   }
 });

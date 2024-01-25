@@ -16,7 +16,7 @@ export const getSingleUsersAsync = createAsyncThunk<
   };
   try {
     const response = await axios.get<User>(
-      `https://fakestore.azurewebsites.net/api/v1/users/${userId}`, config
+      `http://20.218.124.180/api/v1/users/${userId}`, config
     );
     return response.data;
   } catch (e) {

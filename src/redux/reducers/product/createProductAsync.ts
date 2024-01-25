@@ -18,7 +18,7 @@ export const createProductAsync = createAsyncThunk<
 
   try {
     const response = await axios.post(
-      "https://fakestore.azurewebsites.net/api/v1/products",
+      "http://20.218.124.180/api/v1/products",
       product.createProduct, config
     );
     return response.data;

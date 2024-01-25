@@ -18,7 +18,7 @@ export const getAddressAsync = createAsyncThunk<
     };
     try {
         const response = await axios.get(
-            "https://fakestore.azurewebsites.net/api/v1/addresses", config
+            "http://20.218.124.180/api/v1/addresses", config
         );
 
         return response.data;

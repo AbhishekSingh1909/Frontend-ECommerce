@@ -19,7 +19,7 @@ export const createProductImageAsync = createAsyncThunk<
     };
     try {
         const response = await axios.post(
-            "https://fakestore.azurewebsites.net/api/v1/images", productImage, config
+            "http://20.218.124.180/api/v1/images", productImage, config
         );
 
         return response.data;

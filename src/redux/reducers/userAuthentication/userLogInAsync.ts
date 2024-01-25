@@ -13,7 +13,7 @@ export const userLogInAsync = createAsyncThunk<
   async (loginParams: LoginCredential, { rejectWithValue, dispatch }) => {
     try {
       const response = await axios.post<string>(
-        `https://fakestore.azurewebsites.net/api/v1/auth/login`,
+        `http://20.218.124.180/api/v1/auth/login`,
         loginParams
       );
       const access_token = response.data;
