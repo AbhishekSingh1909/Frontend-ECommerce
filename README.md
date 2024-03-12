@@ -82,6 +82,7 @@ first clone the project from the repository and run the node commands.
 - Horizontal Function bases project
   
 public
+│   ├───images
 └───src
     ├───app
     │   └───hooks
@@ -113,7 +114,8 @@ public
     │   ├───reducers
     │   └───shared
     └───types
-        └───FormValidation     
+        └───FormValidation
+           
 ```
 
 ### Testing
