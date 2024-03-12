@@ -77,7 +77,7 @@ first clone the project from the repository and run the node commands.
 ### Project overview
 
 ### Folder structure
-
+```
 - Horizontal Function bases project
   
 public
