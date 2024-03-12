@@ -26,7 +26,7 @@ first clone the project from the repository and run the node commands.
 
 1. git clone https://github.com/AbhishekSingh1909/Frontend-ECommerce.git
 2. cd Frontend-ECommerce
-3. git checkout develop
+3. git checkout fullStack_feature
 4. npm install
 
 ## Fearture
