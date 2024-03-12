@@ -11,7 +11,6 @@ This is an E-commerce website designed as a frontend Project under Integrify Aca
 This project requires implementation of TypeScript and SASS.
 
 ## Technologies
-
 - Typescript
 - React
 - Redux (Toolkit)
