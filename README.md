@@ -74,7 +74,7 @@ first clone the project from the repository and run the node commands.
 - can be checked out
 - can be deleted
 
-## Project overview
+### Project overview
 
 ### Folder structure
 
