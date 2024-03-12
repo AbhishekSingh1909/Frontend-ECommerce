@@ -25,7 +25,7 @@ This project requires implementation of TypeScript and SASS.
 
 first clone the project from the repository and run the node commands.
 
-1. git clone https://github.com/AbhishekSingh1909/fs16_6-frontend-project.git
+1. git clone https://github.com/AbhishekSingh1909/Frontend-ECommerce.git
 2. cd fs16_6-frontend-project
 3. git checkout develop
 4. npm install
