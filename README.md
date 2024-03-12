@@ -80,83 +80,40 @@ first clone the project from the repository and run the node commands.
 ### Folder structure
 
 - Horizontal Function bases project
-  .
-  public
-  |- index.html
-- src
-  |-app
-  | |-hooks
-  | |-useAppDispatch.ts
-  | |-useAppSelector.ts
-  |-components
-  | |-Model
-  | | |-user
-  | | | |-Model
-  | | | |-UpdateProfile.tsx
-  | | | |-UpdateUser.tsx
-  | | |  
-   | | |-UserRegistration.tsx  
-   | |-CreateProductModel.tsx
-  | |-UpdateProductModel.tsx
-  | |-DeleteProductModel.tsx
-  |  
-   |-AdminDashBoard.tsx  
-   |-CarouseImages.tsx
-  |-DashBoardHeader.tsx
-  |-ErrorMessage.tsx
-  |-Footer.tsx
-  |-Header.tsx
-  |-Home.tsx
-  |-Root.tsx
-  |
-  |-custom-component
-  | |-AddToCartPrimaryBox.ts
-  | |-ButtonBoxFlex.ts
-  | |-FormBoxFlex.ts
-  | |-SecondryBox.ts
-  | |-StyledCartButton.ts
-  |
-  |-pages
-  | |-AddToCart.tsx
-  | |-Error.tsx
-  | |-Login.tsx
-  | |-NotAuthorizedUesr.ts
-  | |-OrderMessage.tsx
-  | |-Product.tsx
-  | |-ProdctFilter.tsx
-  | |- ....
-  |
-  |-redux
-  | |-reducers
-  | | |-cart
-  | | | |-cartReducer.ts
-  | | |  
-   | | |-product
-  | | | |-productReducer.ts
-  | | | |- ...
-  | | |-category
-  | | | |-categoryReducer.ts
-  | | | |- ...
-  | | |-user
-  | | | |-userReducer.ts
-  | | | |- ...
-  | | |-userAuthentication
-  | | | |-authReducer.ts
-  | | | |- ...
-  | |-store.ts
-  |-selectors
-  | |-getFilteredProducts.ts
-  |-styles
-  | |-component.style.ts
-  | |-theme.ts
-  |-test
-  | |- ...
-  |-types
-  | |...
-  |-package.json
-- |-tsconfig.json
-  |-.gitignore
-
+  
+public
+└───src
+    ├───app
+    │   └───hooks
+    ├───components
+    │   ├───card
+    │   ├───CenterContainer
+    │   ├───InputSearch
+    │   ├───Pagination
+    │   ├───Product
+    │   ├───ProductImage
+    │   └───User
+    ├───custom-components
+    ├───pages
+    ├───redux
+    │   ├───reducers
+    │   │   ├───address
+    │   │   ├───cart
+    │   │   ├───category
+    │   │   ├───image
+    │   │   ├───order
+    │   │   ├───product
+    │   │   ├───user
+    │   │   └───userAuthentication
+    │   └───store  
+    ├───selectors
+    ├───styles
+    ├───test
+    │   ├───dataSeed
+    │   ├───reducers
+    │   └───shared
+    └───types
+        └───FormValidation     
 ```
 
 ### Testing
